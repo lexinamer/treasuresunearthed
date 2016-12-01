@@ -1,0 +1,14 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.mainmap{
+  img{
+    box-sizing: border-box;
+    width: 100vw;
+  }
+}
+
+.contmap{
+  height: 700px;
+  object-fit: contain;
+}

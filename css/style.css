@@ -1,0 +1,124 @@
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: rgba(255, 255, 255, 0.5); }
+  header .mainlogo {
+    text-align: right; }
+    header .mainlogo img {
+      height: 20px;
+      object-fit: contain;
+      vertical-align: middle; }
+    header .mainlogo a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #231f20; }
+    header .mainlogo .navmain .exhlogo {
+      height: 125px;
+      object-fit: contain; }
+
+.nav {
+  text-align: right; }
+  .nav li {
+    display: inline;
+    padding-left: 30px; }
+    .nav li a {
+      font-size: 36px;
+      color: #231f20;
+      position: relative; }
+
+.nav li a::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10;
+  height: 0px;
+  width: 100%;
+  background-color: #690052;
+  transition: height .3s;
+  content: ""; }
+
+.nav li a:hover {
+  color: #690052; }
+
+.nav li a:hover::after {
+  height: 7px; }
+
+footer {
+  background: #eaebec;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%; }
+  footer .footall {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  footer .footleft {
+    text-align: left; }
+    footer .footleft img {
+      height: 75px;
+      object-fit: contain; }
+  footer .footmiddle {
+    height: 80px;
+    text-align: center;
+    margin-left: 0px; }
+    footer .footmiddle p {
+      margin-bottom: 2px;
+      color: #231f20; }
+    footer .footmiddle ul {
+      margin-bottom: 2px; }
+    footer .footmiddle li {
+      display: inline;
+      padding-left: 15px;
+      padding-right: 15px; }
+      footer .footmiddle li a {
+        font-size: 13px;
+        color: #231f20; }
+    footer .footmiddle .fa {
+      font-size: 22px;
+      width: 30px;
+      padding: 3px;
+      margin-left: 3px;
+      margin-right: 3px;
+      background: #939597;
+      color: white; }
+  footer .footright {
+    text-align: right;
+    margin-left: 0px; }
+    footer .footright ul {
+      margin-bottom: 0px; }
+    footer .footright li {
+      display: inline;
+      padding-left: 5px;
+      padding-right: 5px; }
+      footer .footright li a {
+        font-size: 13px;
+        color: #231f20; }
+
+.footmiddle a:hover, .footright a:hover {
+  color: #690052;
+  font-weight: 500;
+  text-decoration: underline; }
+
+.footmiddle .fa:hover {
+  background: #2ab6bc; }
+
+.mainmap img {
+  box-sizing: border-box;
+  width: 100vw; }
+
+.contmap {
+  height: 700px;
+  object-fit: contain; }
+
+body {
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
