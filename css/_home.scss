@@ -1,0 +1,86 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.image-stretch {
+  // width: 100%;
+  height: 630px;
+  background-image: url("../images/hero-home.jpeg");
+  background-size: cover;
+  object-fit: contain;
+}
+
+.about {
+  background-color: #eaebec;
+  overflow: hidden;
+  .about-img {
+    margin: 13% 0;
+    margin-left: 20%;
+    img {
+      height: 160px;
+      width: 160px;
+    }
+  }
+  .about-text {
+    margin: 10% 0;
+    margin-right: 15%;
+  }
+}
+
+.origin {
+  background-color: white;
+    .origin-text {
+      margin: 10% 0;
+      margin-left: 15%;
+    }
+  .origin-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    padding-left: 25px;
+    img {
+      width: 400px;
+      height: 350px;
+    }
+  }
+}
+
+.unearthing {
+  background-color: #eaebec;
+  .unearthing-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    padding-right: 0;
+    img {
+      width: 350px;
+      height: 300px;
+    }
+  }
+  .unearthing-text {
+    margin: 10% 0;
+    margin-right: 15%;
+  }
+}
+
+.treasures {
+  background-color: white;
+    .treasures-text {
+      margin: 10% 0;
+      margin-left: 15%;
+    }
+  .treasures-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    padding-left: 0;
+    img {
+      width: 350px;
+      height: 300px;
+    }
+  }
+}

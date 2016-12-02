@@ -114,6 +114,74 @@ footer {
   height: 700px;
   object-fit: contain; }
 
+.container {
+  width: 100%;
+  max-width: 100%; }
+
+.image-stretch {
+  height: 630px;
+  background-image: url("../images/hero-home.jpeg");
+  background-size: cover;
+  object-fit: contain; }
+
+.about {
+  background-color: #eaebec;
+  overflow: hidden; }
+  .about .about-img {
+    margin: 13% 0;
+    margin-left: 20%; }
+    .about .about-img img {
+      height: 160px;
+      width: 160px; }
+  .about .about-text {
+    margin: 10% 0;
+    margin-right: 15%; }
+
+.origin {
+  background-color: white; }
+  .origin .origin-text {
+    margin: 10% 0;
+    margin-left: 15%; }
+  .origin .origin-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    padding-left: 25px; }
+    .origin .origin-img img {
+      width: 400px;
+      height: 350px; }
+
+.unearthing {
+  background-color: #eaebec; }
+  .unearthing .unearthing-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    padding-right: 0; }
+    .unearthing .unearthing-img img {
+      width: 350px;
+      height: 300px; }
+  .unearthing .unearthing-text {
+    margin: 10% 0;
+    margin-right: 15%; }
+
+.treasures {
+  background-color: white; }
+  .treasures .treasures-text {
+    margin: 10% 0;
+    margin-left: 15%; }
+  .treasures .treasures-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    padding-left: 0; }
+    .treasures .treasures-img img {
+      width: 350px;
+      height: 300px; }
+
 body {
   margin: 0 auto;
   font-family: 'Helvetica Neue', Helvetica, sans-serif; }
