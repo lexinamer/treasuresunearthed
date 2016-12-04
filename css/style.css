@@ -114,6 +114,101 @@ footer {
   height: 700px;
   object-fit: contain; }
 
+.container {
+  width: 100%;
+  max-width: 100%; }
+
+h1 {
+  text-align: center; }
+
+h1::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10;
+  height: 0px;
+  width: 85%;
+  background-color: #690052;
+  transition: height .3s;
+  content: ""; }
+
+h1:hover {
+  color: #690052; }
+
+h1:hover::after {
+  height: 7px; }
+
+a {
+  color: #231f20; }
+
+a:hover {
+  color: #690052; }
+
+p {
+  font-size: 18px;
+  color: #231f20; }
+
+.hero {
+  background-image: url("../images/art/treasureshero.jpg");
+  height: 630px;
+  width: 100%;
+  background-size: cover;
+  margin-top: -10px; }
+
+.jewelry {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #eaebec;
+  text-align: center; }
+  .jewelry .jewelryarea {
+    margin-left: 15%;
+    margin-right: 15%; }
+  .jewelry .jewel-img {
+    height: 200px;
+    width: 200px;
+    padding: 5%;
+    border: 1px solid #eaebec;
+    margin-bottom: 5%;
+    margin-top: 5%; }
+
+.decor {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: white;
+  text-align: center; }
+  .decor .decorarea {
+    margin-left: 15%;
+    margin-right: 15%; }
+  .decor .decor-img {
+    height: 200px;
+    width: 200px;
+    padding: 5%;
+    border: 1px solid #eaebec;
+    margin-bottom: 5%;
+    margin-top: 5%; }
+
+.commercial {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #eaebec;
+  text-align: center; }
+  .commercial .commercialarea {
+    margin-left: 15%;
+    margin-right: 15%; }
+  .commercial .comm-img {
+    height: 200px;
+    width: 200px;
+    padding: 5%;
+    border: 1px solid #eaebec;
+    margin-bottom: 5%;
+    margin-top: 5%; }
+
+.columns {
+  margin: 0; }
+
+.container {
+  content: none; }
+
 body {
   margin: 0 auto;
   font-family: 'Helvetica Neue', Helvetica, sans-serif; }
