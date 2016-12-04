@@ -24,7 +24,7 @@ header {
     display: inline;
     padding-left: 30px; }
     .nav li a {
-      font-size: 36px;
+      font-size: 24px;
       color: #231f20;
       position: relative; }
 
@@ -118,39 +118,91 @@ footer {
   width: 100%;
   max-width: 100%; }
 
-.image-stretch {
+.home-bg-img {
   height: 630px;
   background-image: url("../images/hero-home.jpeg");
   background-size: cover;
   object-fit: contain; }
+
+.home-hero-text {
+  color: #231f20;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 400px;
+  padding: 2%;
+  position: relative;
+  top: 30%;
+  left: 55%; }
+  .home-hero-text h4 {
+    text-align: center;
+    font-weight: 400; }
+  .home-hero-text hr, .home-hero-text p {
+    margin: 0;
+    text-align: center; }
+  .home-hero-text hr {
+    border: 1px solid #231f20; }
+  .home-hero-text .dates {
+    font-weight: 500; }
 
 .about {
   background-color: #eaebec;
   overflow: hidden; }
   .about .about-img {
     margin: 13% 0;
-    margin-left: 20%; }
+    margin-left: 25%; }
     .about .about-img img {
       height: 160px;
       width: 160px; }
   .about .about-text {
     margin: 10% 0;
-    margin-right: 15%; }
+    margin-right: 15%;
+    margin-left: 5%;
+    position: relative; }
+    .about .about-text h1::after {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -10;
+      height: 0px;
+      width: 90%;
+      background-color: #690052;
+      transition: height .3s;
+      content: ""; }
+    .about .about-text h1:hover {
+      color: #690052; }
+    .about .about-text h1:hover::after {
+      height: 7px; }
 
 .origin {
   background-color: white; }
   .origin .origin-text {
     margin: 10% 0;
-    margin-left: 15%; }
-  .origin .origin-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 35px;
-    padding-left: 25px; }
-    .origin .origin-img img {
-      width: 400px;
-      height: 350px; }
+    margin-left: 18%;
+    margin-right: 7%;
+    position: relative; }
+    .origin .origin-text h1::after {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -10;
+      height: 0px;
+      width: 29%;
+      background-color: #690052;
+      transition: height .3s;
+      content: ""; }
+    .origin .origin-text h1:hover {
+      color: #690052; }
+    .origin .origin-text h1:hover::after {
+      height: 7px; }
+  .origin .col-right {
+    margin-left: 1%; }
+    .origin .col-right .origin-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px;
+      padding-right: 100px; }
+      .origin .col-right .origin-img img {
+        border: 1px solid #eaebec; }
 
 .unearthing {
   background-color: #eaebec; }
@@ -159,28 +211,149 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 60px;
-    padding-right: 0; }
-    .unearthing .unearthing-img img {
-      width: 350px;
-      height: 300px; }
+    padding-right: 0;
+    padding-left: 100px; }
   .unearthing .unearthing-text {
     margin: 10% 0;
-    margin-right: 15%; }
+    margin-right: 17%;
+    margin-left: 5%;
+    position: relative; }
+    .unearthing .unearthing-text h1::after {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -10;
+      height: 0px;
+      width: 53%;
+      background-color: #690052;
+      transition: height .3s;
+      content: ""; }
+    .unearthing .unearthing-text h1:hover {
+      color: #690052; }
+    .unearthing .unearthing-text h1:hover::after {
+      height: 7px; }
 
 .treasures {
   background-color: white; }
   .treasures .treasures-text {
     margin: 10% 0;
-    margin-left: 15%; }
+    margin-left: 18%;
+    margin-right: 5%;
+    position: relative; }
+    .treasures .treasures-text h1::after {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -10;
+      height: 0px;
+      width: 49%;
+      background-color: #690052;
+      transition: height .3s;
+      content: ""; }
+    .treasures .treasures-text h1:hover {
+      color: #690052; }
+    .treasures .treasures-text h1:hover::after {
+      height: 7px; }
   .treasures .treasures-img {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 60px;
-    padding-left: 0; }
+    padding-left: 0;
+    padding-right: 100px; }
     .treasures .treasures-img img {
+      border: 1px solid #eaebec; }
+
+.container {
+  width: 100%;
+  max-width: 100%; }
+
+.unearth-bg-img {
+  height: 630px;
+  background-image: url("../images/unearthing-hero.png");
+  background-size: cover;
+  object-fit: contain; }
+
+.unearth-hero-text {
+  color: #231f20;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 400px;
+  padding: 2%;
+  position: relative;
+  top: 40%;
+  left: 55%; }
+  .unearth-hero-text h4 {
+    text-align: center;
+    font-weight: 400; }
+  .unearth-hero-text hr, .unearth-hero-text p {
+    margin: 0;
+    text-align: center; }
+  .unearth-hero-text hr {
+    border: 1px solid #231f20; }
+  .unearth-hero-text .dates {
+    font-weight: 500; }
+
+.what {
+  background-color: white; }
+  .what .what-text {
+    margin: 10% 0;
+    margin-left: 18%;
+    margin-right: 7%;
+    position: relative; }
+  .what .col-right {
+    margin-left: 1%; }
+    .what .col-right .what-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px;
+      padding-right: 100px;
+      padding-top: 65px; }
+      .what .col-right .what-img img {
+        height: 300px;
+        width: 350px;
+        border: 1px solid #eaebec; }
+
+.how {
+  background-color: #eaebec; }
+  .how .how-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    padding-right: 0;
+    padding-left: 100px;
+    padding-top: 90px; }
+    .how .how-img img {
+      height: 350px;
+      width: 400px; }
+  .how .how-text {
+    margin: 0;
+    margin-top: 7%;
+    margin-right: 17%;
+    margin-left: 5%;
+    position: relative; }
+    .how .how-text .bold-text {
+      font-size: 25px; }
+
+.where {
+  background-color: white; }
+  .where .where-text {
+    margin: 10% 0;
+    margin-left: 18%;
+    margin-right: 5%;
+    position: relative; }
+  .where .where-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    padding-left: 0;
+    padding-right: 100px; }
+    .where .where-img img {
+      height: 300px;
       width: 350px;
-      height: 300px; }
+      border: 1px solid #eaebec; }
 
 body {
   margin: 0 auto;
