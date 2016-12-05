@@ -114,15 +114,18 @@ footer {
   height: 700px;
   object-fit: contain; }
 
+*:focus {
+  outline: none; }
+
 .container {
   width: 100%;
   max-width: 100%; }
 
 .unearth-hero-text {
-  margin-top: 230px;
+  margin-top: 90px;
   color: #231f20;
   background-color: rgba(255, 255, 255, 0.6);
-  width: 400px;
+  width: 500px;
   padding: 2%;
   position: relative;
   top: 40%;
@@ -138,23 +141,6 @@ footer {
 
 h1 {
   text-align: center; }
-
-h1::after {
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -10;
-  height: 0px;
-  width: 85%;
-  background-color: #690052;
-  transition: height .3s;
-  content: ""; }
-
-h1:hover {
-  color: #690052; }
-
-h1:hover::after {
-  height: 7px; }
 
 a {
   color: #231f20; }
@@ -179,15 +165,17 @@ p {
   background-color: #eaebec;
   text-align: center; }
   .jewelry .jewelryarea {
-    margin-left: 15%;
+    margin-left: 19%;
     margin-right: 15%; }
   .jewelry .jewel-img {
     height: 200px;
     width: 200px;
+    box-sizing: border-box;
     padding: 5%;
-    border: 1px solid #eaebec;
     margin-bottom: 5%;
-    margin-top: 5%; }
+    margin-top: 5%;
+    cursor: pointer;
+    cursor: hand; }
 
 .decor {
   padding-top: 5%;
@@ -195,13 +183,13 @@ p {
   background-color: white;
   text-align: center; }
   .decor .decorarea {
-    margin-left: 15%;
+    margin-left: 19%;
     margin-right: 15%; }
   .decor .decor-img {
+    box-sizing: border-box;
     height: 200px;
     width: 200px;
     padding: 5%;
-    border: 1px solid #eaebec;
     margin-bottom: 5%;
     margin-top: 5%; }
 
@@ -211,13 +199,13 @@ p {
   background-color: #eaebec;
   text-align: center; }
   .commercial .commercialarea {
-    margin-left: 15%;
+    margin-left: 19%;
     margin-right: 15%; }
   .commercial .comm-img {
     height: 200px;
     width: 200px;
+    box-sizing: border-box;
     padding: 5%;
-    border: 1px solid #eaebec;
     margin-bottom: 5%;
     margin-top: 5%; }
 
@@ -227,6 +215,146 @@ p {
 .container {
   content: none; }
 
+.jewel-img:hover, .comm-img:hover {
+  border: 1px solid #2ab6bc; }
+
+.decor-img:hover {
+  box-sizing: border-box;
+  border: 1px solid #690052; }
+
+@media (min-width: 768px) and (max-width: 1256px) {
+  .unearth-hero-text {
+    margin-top: 95px;
+    color: #231f20;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 300px;
+    padding: 2%;
+    position: relative;
+    top: 40%;
+    left: 50%; }
+
+  h4 {
+    text-align: center;
+    font-weight: 400; }
+
+  hr, p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px; }
+
+  .jewelry {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #eaebec;
+    text-align: center; }
+    .jewelry .jewelryarea {
+      margin-left: 5%;
+      margin-right: 5%; }
+    .jewelry .jewel-img {
+      height: 110px;
+      width: 110px;
+      padding: 5%;
+      border: 1px solid #eaebec;
+      margin-bottom: 5%;
+      margin-top: 5%; }
+
+  .decor {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: white;
+    text-align: center; }
+    .decor .decorarea {
+      margin-left: 15%;
+      margin-right: 15%; }
+    .decor .decor-img {
+      height: 110px;
+      width: 110px;
+      padding: 5%;
+      border: 1px solid #eaebec;
+      margin-bottom: 5%;
+      margin-top: 5%; }
+
+  .commercial {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #eaebec;
+    text-align: center; }
+    .commercial .commercialarea {
+      margin-left: 15%;
+      margin-right: 15%; }
+    .commercial .comm-img {
+      height: 110px;
+      width: 110px;
+      padding: 5%;
+      border: 1px solid #eaebec;
+      margin-bottom: 5%;
+      margin-top: 5%; }
+
+  .columns {
+    margin-left: 4%; } }
+@media (max-width: 767px) {
+  .unearth-hero-text {
+    display: none; }
+
+  h4 {
+    text-align: center;
+    font-weight: 400; }
+
+  hr, p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px; }
+
+  .jewelry {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #eaebec;
+    text-align: center; }
+    .jewelry .jewelryarea {
+      margin-left: 5%;
+      margin-right: 5%; }
+    .jewelry .jewel-img {
+      height: 250px;
+      width: 250px;
+      padding: 5%;
+      border: 1px solid #eaebec;
+      margin-bottom: 5%;
+      margin-top: 5%; }
+
+  .decor {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: white;
+    text-align: center; }
+    .decor .decorarea {
+      margin-left: 15%;
+      margin-right: 15%; }
+    .decor .decor-img {
+      height: 250px;
+      width: 250px;
+      padding: 5%;
+      border: 1px solid #eaebec;
+      margin-bottom: 5%;
+      margin-top: 5%; }
+
+  .commercial {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #eaebec;
+    text-align: center; }
+    .commercial .commercialarea {
+      margin-left: 15%;
+      margin-right: 15%; }
+    .commercial .comm-img {
+      height: 250px;
+      width: 250px;
+      padding: 5%;
+      border: 1px solid #eaebec;
+      margin-bottom: 5%;
+      margin-top: 5%; }
+
+  .columns {
+    margin-left: 4%; } }
 body {
   margin: 0 auto;
   font-family: 'Helvetica Neue', Helvetica, sans-serif; }
