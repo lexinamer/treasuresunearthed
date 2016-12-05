@@ -107,14 +107,6 @@ footer {
 .footmiddle .fa:hover {
   background: #2ab6bc; }
 
-.mainmap img {
-  box-sizing: border-box;
-  width: 100vw; }
-
-.contmap {
-  height: 700px;
-  object-fit: contain; }
-
 header {
   position: absolute;
   top: 0;
@@ -414,6 +406,14 @@ header {
       font-size: 30px; }
   .treasures .treasures-img {
     display: none; } }
+.mainmap img {
+  box-sizing: border-box;
+  width: 100vw; }
+
+.contmap {
+  height: 700px;
+  object-fit: contain; }
+
 .container {
   width: 100%;
   max-width: 100%; }

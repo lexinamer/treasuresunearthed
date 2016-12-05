@@ -1,10 +1,13 @@
 @import "variables.scss";
 @import "mixins.scss";
+
 @import "header.scss";
 @import "footer.scss";
-@import "origin.scss";
+
 @import "home.scss";
+@import "origin.scss";
 @import "unearthing.scss";
+@import "treasures.scss";
 
 body{
   margin: 0 auto;
