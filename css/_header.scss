@@ -4,6 +4,7 @@
 header{
   @include padding;
   background: rgba(255, 255, 255, .5);
+  box-sizing: border-box;
   .mainlogo{
     text-align: right;
     img{
@@ -31,7 +32,7 @@ header{
     display: inline;
     padding-left: 30px;
     a{
-      font-size: 36px;
+      font-size: 24px;
       color: $darkgray;
       position: relative;
     }

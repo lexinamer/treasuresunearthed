@@ -1,4 +1,7 @@
-// header call
-$(document).ready(function(event){
-  
+jQuery(document).ready(function($) {
+  $('.slider').unslider({
+    autoplay: true,
+    infinite: true,
+    arrows: false
+  });
 });
