@@ -32,12 +32,13 @@ header {
 }
 
 .home-hero-title {
+  margin: 0 auto;
   padding: 2%;
   color: #231f20;
   background-color: rgba(255, 255, 255, .5);
   position: absolute;
   top: 45%;
-  left: 13%;
+  left: 25%;
   .title {
     text-align: center;
     font-size: 60px;

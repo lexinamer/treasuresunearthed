@@ -141,12 +141,13 @@ header {
   overflow: inherit; }
 
 .home-hero-title {
+  margin: 0 auto;
   padding: 2%;
   color: #231f20;
   background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
   top: 45%;
-  left: 13%; }
+  left: 25%; }
   .home-hero-title .title {
     text-align: center;
     font-size: 60px;
@@ -515,6 +516,135 @@ header {
       margin-right: 20%;
       margin-left: 0; }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-hero-title {
+    left: 0;
+    top: 50%; }
+    .home-hero-title .title {
+      font-size: 40px;
+      font-weight: 600; }
+    .home-hero-title .dates {
+      font-weight: 600; }
+
+  .about .about-img {
+    margin: 5% 0;
+    margin-top: 10%;
+    margin-left: 20%; }
+    .about .about-img img {
+      height: 120px;
+      width: 120px; }
+  .about .about-text {
+    margin: 5% 10%; }
+    .about .about-text h1::after {
+      width: 96%; }
+    .about .about-text .about-title {
+      font-size: 30px; }
+
+  .origin .origin-text {
+    margin: 8% 10%; }
+    .origin .origin-text h1::after {
+      width: 29%;
+      background-color: #690052;
+      transition: height .3s;
+      content: ""; }
+    .origin .origin-text .origin-title {
+      font-size: 30px; }
+  .origin .col-right {
+    margin-left: 1%; }
+    .origin .col-right .origin-img {
+      padding: 30px;
+      padding-top: 140px;
+      padding-right: 50px; }
+      .origin .col-right .origin-img img {
+        height: 250px;
+        width: 300px; }
+
+  .unearthing .unearthing-img {
+    margin-left: 20%;
+    padding: 30px;
+    padding-top: 150px; }
+    .unearthing .unearthing-img img {
+      height: 250px;
+      width: 300px; }
+  .unearthing .unearthing-text {
+    margin: 8% 10%;
+    margin-left: 15%; }
+    .unearthing .unearthing-text h1::after {
+      width: 55%; }
+    .unearthing .unearthing-text .unearth-title {
+      font-size: 30px; }
+
+  .treasures .treasures-text {
+    margin: 8% 10%; }
+    .treasures .treasures-text h1::after {
+      width: 50%; }
+    .treasures .treasures-text .treasures-title {
+      font-size: 30px; }
+  .treasures .treasures-img {
+    margin-left: 1%;
+    padding: 30px;
+    padding-top: 100px;
+    padding-right: 50px; }
+    .treasures .treasures-img img {
+      height: 250px;
+      width: 300px; } }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .unearth-hero-text {
+    left: 0;
+    top: 50%; }
+
+  .what .what-text {
+    margin: 8% 10%; }
+  .what .col-right {
+    margin-left: 1%; }
+    .what .col-right .what-img img {
+      height: 250px;
+      width: 300px; }
+
+  .how .how-img {
+    padding-top: 200px; }
+    .how .how-img img {
+      height: 250px;
+      width: 300px; }
+  .how .how-text {
+    margin: 8% 10%; }
+
+  .where .where-text {
+    margin: 8% 10%; }
+  .where .where-img img {
+    height: 250px;
+    width: 300px; } }
+@media (max-width: 767px) {
+  .unearth-hero-text {
+    left: 0;
+    top: 50%; }
+
+  .seven.columns {
+    width: 100%; }
+
+  .what .what-text {
+    margin: 8% 10%; }
+  .what .col-right {
+    margin-left: 1%; }
+    .what .col-right .what-img {
+      display: none; }
+
+  .how .how-img {
+    display: none; }
+  .how .how-text {
+    margin: 8% 10%; }
+
+  .where .where-text {
+    margin: 8% 10%; }
+  .where .where-img {
+    display: none; }
+
+  .videos .videos-img {
+    margin-left: 5%; }
+  .videos .right-col .video-text {
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%; } }
 body {
   margin: 0 auto;
   font-family: 'Helvetica Neue', Helvetica, sans-serif; }
