@@ -34,49 +34,10 @@
   hr {
     border: 1px solid #231f20;
   }
-  .dates{
-    font-weight: 500;
-  }
 }
 
-// .about {
-//   background-color: #eaebec;
-//   overflow: hidden;
-//   .about-img {
-//     margin: 13% 0;
-//     margin-left: 25%;
-//     img {
-//       height: 160px;
-//       width: 160px;
-//     }
-//   }
-//   .about-text {
-//     margin: 10% 0;
-//     margin-right: 15%;
-//     margin-left: 5%;
-//     position: relative;
-//     h1::after{
-//       display: block;
-//       position: absolute;
-//       left: 0;
-//       bottom: -10;
-//       height: 0px;
-//       width: 90%;
-//       background-color: $purple;
-//       transition: height .3s;
-//       content: "";
-//     }
-//     h1:hover{
-//       color: $purple;
-//     }
-//     h1:hover::after{
-//       height: 7px;
-//     }
-//   }
-// }
-
 .what {
-  background-color: white;
+  background-color: #eaebec;
     .what-text {
       margin: 10% 0;
       margin-left: 18%;
@@ -94,8 +55,6 @@
         padding-right: 100px;
         padding-top: 65px;
         img {
-          height: 300px;
-          width: 350px;
           border: 1px solid #eaebec;
         }
       }
@@ -103,7 +62,7 @@
 }
 
 .how {
-  background-color: #eaebec;
+  background-color: white;
   .how-img {
     display: flex;
     align-items: center;
@@ -111,15 +70,15 @@
     padding: 60px;
     padding-right: 0;
     padding-left: 100px;
-    padding-top: 90px;
+    padding-top: 110px;
     img {
-      height: 350px;
-      width: 400px;
+      height: 300px;
+      width: 350px;
+      border: 1px solid #eaebec;
     }
   }
   .how-text {
-    margin: 0;
-    margin-top: 7%;
+    margin-top: 6%;
     margin-right: 17%;
     margin-left: 5%;
     position: relative;
@@ -130,7 +89,7 @@
 }
 
 .where {
-  background-color: white;
+  background-color: #eaebec;
     .where-text {
       margin: 10% 0;
       margin-left: 18%;
@@ -145,9 +104,29 @@
     padding-left: 0;
     padding-right: 100px;
     img {
+      border: 1px solid #eaebec;
+    }
+  }
+}
+
+.videos {
+  background-color: white;
+  .videos-img {
+    margin: 3% 0;
+    margin-left: 12%;
+    video {
       height: 300px;
       width: 350px;
-      border: 1px solid #eaebec;
+      margin: 2%;
+      margin-top: 4%;
+    }
+  }
+  .right-col {
+    margin-left: 0;
+    .video-text {
+      margin-top: 30%;
+      margin-right: 20%;
+      margin-left: 0;
     }
   }
 }
