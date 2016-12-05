@@ -21,8 +21,14 @@ header {
 
 .nav {
   text-align: right; }
+  .nav ul {
+    margin-bottom: 5px; }
+    .nav ul .fa {
+      display: none; }
   .nav li {
-    display: inline;
+    display: inline-block !important;
+    padding-top: 35px;
+    padding-bottom: 0px;
     padding-left: 30px; }
     .nav li a {
       font-size: 24px;
@@ -33,7 +39,7 @@ header {
   display: block;
   position: absolute;
   left: 0;
-  bottom: -10;
+  bottom: -5;
   height: 0px;
   width: 100%;
   background-color: #690052;
@@ -46,26 +52,105 @@ header {
 .nav li a:hover::after {
   height: 7px; }
 
+.social .fa:hover {
+  background: #2ab6bc; }
+
+@media (max-width: 767px) {
+  header {
+    margin: 0px;
+    padding: 5px;
+    height: auto; }
+    header .navmain .four.columns {
+      width: 40%; }
+    header .navmain .exhlogo {
+      height: 75px; }
+      header .navmain .exhlogo img {
+        height: 75px; }
+
+  .social {
+    display: none; }
+
+  .eight.columns {
+    width: 60%;
+    margin-left: 0px; }
+
+  .nav ul {
+    margin: 0px; }
+    .nav ul .fa {
+      padding-top: 5px;
+      font-size: 35px;
+      display: block; }
+    .nav ul li {
+      list-style: none;
+      text-align: right;
+      display: block;
+      display: none;
+      padding: 10px 10px 0px 0px;
+      line-height: 10px; }
+      .nav ul li a {
+        font-size: 24px;
+        color: #231f20;
+        position: relative; }
+
+  .nav li a::after {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 1256px) {
+  header {
+    margin: 0px;
+    padding: 5px;
+    height: auto; }
+    header .navmain .four.columns {
+      width: 40%; }
+    header .navmain .exhlogo {
+      height: 100px; }
+      header .navmain .exhlogo img {
+        height: 100px; }
+
+  .eight.columns {
+    width: 60%;
+    margin-left: 0px; }
+
+  .nav ul {
+    margin: 0px; }
+    .nav ul .fa {
+      padding-top: 5px;
+      font-size: 35px;
+      display: block; }
+    .nav ul li {
+      list-style: none;
+      text-align: right;
+      display: block;
+      display: none;
+      padding: 10px 10px 0px 0px;
+      line-height: 10px; }
+      .nav ul li a {
+        font-size: 24px;
+        color: #231f20;
+        position: relative; }
+
+  .nav li a::after {
+    display: none; } }
 footer {
   background: #eaebec;
   height: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10%;
-  padding-right: 10%; }
+  box-sizing: border-box; }
   footer .footall {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
   footer .footleft {
-    text-align: left; }
+    text-align: left;
+    padding-top: 5px; }
     footer .footleft img {
       height: 75px;
       object-fit: contain; }
   footer .footmiddle {
-    height: 80px;
     text-align: center;
-    margin-left: 0px; }
+    padding-top: 15px; }
     footer .footmiddle p {
       margin-bottom: 2px;
       color: #231f20; }
@@ -78,17 +163,9 @@ footer {
       footer .footmiddle li a {
         font-size: 13px;
         color: #231f20; }
-    footer .footmiddle .fa {
-      font-size: 22px;
-      width: 30px;
-      padding: 3px;
-      margin-left: 3px;
-      margin-right: 3px;
-      background: #939597;
-      color: white; }
   footer .footright {
     text-align: right;
-    margin-left: 0px; }
+    padding-top: 5px; }
     footer .footright ul {
       margin-bottom: 0px; }
     footer .footright li {
@@ -104,8 +181,52 @@ footer {
   font-weight: 500;
   text-decoration: underline; }
 
-.footmiddle .fa:hover {
-  background: #2ab6bc; }
+@media (max-width: 767px) {
+  .columns {
+    width: 100%; }
+
+  footer {
+    height: auto; }
+    footer .footall {
+      position: static;
+      transform: translateY(0);
+      padding-left: 0px;
+      padding-right: 0px; }
+    footer .footleft {
+      text-align: center;
+      padding-top: 5px; }
+      footer .footleft img {
+        height: 50px;
+        object-fit: contain; }
+    footer .footmiddle li {
+      padding-left: 5px;
+      padding-right: 5px; }
+    footer .footright {
+      display: none; } }
+@media (min-width: 768px) and (max-width: 1256px) {
+  .columns {
+    width: 100%; }
+
+  footer {
+    height: auto; }
+    footer .footall {
+      position: static;
+      transform: translateY(0);
+      padding-left: 5px;
+      padding-right: 5px; }
+    footer .footleft {
+      text-align: center;
+      padding-top: 5px; }
+      footer .footleft img {
+        height: 60px;
+        object-fit: contain; }
+    footer .footmiddle li {
+      padding-left: 5px;
+      padding-right: 5px; }
+    footer .footright img {
+      width: 100px; } }
+button {
+  border-radius: 0px; }
 
 header {
   position: absolute;
@@ -408,11 +529,118 @@ header {
     display: none; } }
 .mainmap img {
   box-sizing: border-box;
-  width: 100vw; }
+  position: relative;
+  z-index: 100; }
+  .continent h5 {
+    text-align: right;
+    margin-bottom: 0px; }
+    .continent h5 a {
+      text-align: right;
+      text-decoration: none;
+      padding-right: 7px;
+      color: #231f20; }
+
+.continent h5 a:hover {
+  color: #690052;
+  text-decoration: underline; }
 
 .contmap {
-  height: 700px;
-  object-fit: contain; }
+  height: 600px;
+  text-align: center; }
+  .contmap img {
+    height: 575px;
+    object-fit: contain; }
+
+.mineralpics {
+  height: 625px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; }
+  .mineralpics div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+    display: none; }
+    .mineralpics div img {
+      height: 400px;
+      object-fit: contain;
+      text-align: center;
+      margin: 0px;
+      padding: 0px; }
+    .mineralpics div p {
+      font-size: 24px; }
+
+@media (max-width: 767px) {
+  .mainmap {
+    position: static;
+    padding-top: 25px;
+    height: auto; }
+    .mainmap img {
+      display: none; }
+    .mainmap .textbox {
+      display: none; }
+    .mainmap button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 250px;
+      border: 1px solid #690052; }
+
+  .dot {
+    display: none; }
+
+  .continent {
+    height: auto; }
+    .continent h5 {
+      text-align: center; }
+      .continent h5 a {
+        text-align: center; }
+
+  .contmap {
+    height: auto; }
+    .contmap img {
+      width: 95%;
+      height: auto; }
+
+  .mineralpics {
+    height: 450px; }
+    .mineralpics div img {
+      height: auto;
+      width: 95%; } }
+@media (min-width: 768px) and (max-width: 1256px) {
+  .mainmap {
+    position: static;
+    padding-top: 25px;
+    height: auto;
+    text-align: center; }
+    .mainmap img {
+      display: none; }
+    .mainmap .textbox {
+      display: none; }
+    .mainmap button {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 250px;
+      border: 1px solid #690052; }
+
+  .dot {
+    display: none; }
+
+  .continent {
+    height: auto; }
+
+  .contmap {
+    height: auto; }
+    .contmap img {
+      width: 95%;
+      height: auto; }
 
 .container {
   width: 100%;
